@@ -1,0 +1,210 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background: #14203a;
+}
+
+#login-screen {
+    position: fixed;
+    inset: 0;
+    background: #14203a;;
+}
+
+/* Card */
+.login-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 40px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 10px auto; 
+    display: block;
+}
+
+/* Titel */
+.login-card h1 {
+    margin-bottom: 10px;
+    color: wheat;
+    margin-top: 5px;
+}
+
+/* Subtitle */
+.subtitle {
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Inputs */
+.login-card input {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: aqua;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Glow effect */
+.login-card input:focus {
+    box-shadow: 0 0 10px aqua, 0 0 20px aqua;
+    border: none;
+    outline: none;
+}
+
+/* Button */
+.login-card button {
+    width: 50%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #111;
+    color: aqua;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.login-card button:hover {
+    background: aqua;
+    color: #111;
+    box-shadow: 0 0 15px aqua, 0 0 30px aqua;
+    transform: translateY(-2px);
+}
+
+/* Kleine tekst */
+.small-text {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.welkom {
+    margin-bottom: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: wheat;
+}
+
+/* ===== NAVBAR ===== */
+
+nav {
+    background: #1b2a40;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    position: relative;
+    color: wheat;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* ===== ANIMATED UNDERLINE ===== */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: aqua;
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: aqua;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+  display: flex;
+  justify-content: center;   /* horizontaal centreren */
+}
+
+/* ===== BUTTONS ===== */
+
+/* Container begrenzen en centreren */
+.button-container {
+    width: 100%;
+    max-width: 1120px;   /* voorkomt full width */
+    margin: 0 auto;      /* echte centrering */
+}
+
+.button-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Max 5 per rij */
+  gap: 1px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.button-list li {
+  width: 100%;
+}
+
+.btn, .btn-login {
+    display: block;
+    padding: 10px 18px;
+    margin: 2px;
+    background: #111;
+    color: aqua;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    text-align: center;
+}
+
+.btn:hover {
+    background: aqua;
+    color: #111;
+    box-shadow: 0 0 15px aqua, 0 0 30px aqua;
+    transform: translateY(-3px);
+}
+
+.btn-login:hover, .btn-login:focus {
+    background: aqua;
+    color: #111;
+    box-shadow: 0 0 15px aqua, 0 0 30px aqua;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    color: wheat;
+    text-align: center;
+    margin-top: 50px;
+}
